@@ -1,0 +1,349 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html,
+   button,
+   input,
+   select,
+   textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body {
+    border-top: .2em solid indianred;
+}
+a[name] {
+    color: inherit;
+}
+footer {
+    position: relative;
+    overflow: hidden;
+    height: 719px;
+}
+footer .photo {
+    width: 1218px;
+    height: 719px;
+    background: url(../img/photo.jpg);
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    margin-left: -609px;
+}
+footer .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+section {
+    border-top: .2em solid;
+    padding: 50px;
+}
+.bio {
+    text-align: center;
+    border-color: #C73035;
+    /*background-color: #DD3C41 ;*/
+    color: white;
+}
+.bio p {
+    position: relative;
+    z-index: 1000;
+}
+
+.bio {
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+    background: red url(../img/startup/startup-retina.png) repeat-y center top;
+    -webkit-animation: slides 60s linear infinite;
+    -moz-animation: slides 60s linear infinite;
+    -o-animation: slides 60s linear infinite;
+    -ms-animation: slides 60s linear infinite;
+    animation: slides 60s linear infinite;
+    padding-top: 50px;
+}
+.bio::before {
+    left: 0;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwNDM0OSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlMDQzNDkiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiKDIyNCwgNjcsIDczKSIgc3RvcC1vcGFjaXR5PSIwIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(left,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,#E04349),color-stop(50%,#E04349),color-stop(100%,rgba(224, 67, 73, 0)));
+    background-image: -webkit-linear-gradient(left,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: -o-linear-gradient(left,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: linear-gradient(to right,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+}
+.bio::after {
+    right: 0;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTAwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwNDM0OSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlMDQzNDkiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiKDIyNCwgNjcsIDczKSIgc3RvcC1vcGFjaXR5PSIwIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(right,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: -webkit-gradient(linear,right top,left top,color-stop(0%,#E04349),color-stop(50%,#E04349),color-stop(100%,rgba(224, 67, 73, 0)));
+    background-image: -webkit-linear-gradient(right,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: -o-linear-gradient(right,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+    background-image: linear-gradient(to left,#E04349 0,#E04349 50%,rgba(224, 67, 73, 0) 100%);
+}
+.bio::before, .bio::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 660px;
+    width: 350px;
+}
+
+@-webkit-keyframes slides {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -659px;
+    }
+}
+
+@-moz-keyframes slides {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -659px;
+    }
+}
+
+@-o-keyframes slides {
+    from;
+
+{
+    background-position: 0 0;
+}
+
+to {
+    background-position: 0 -659px;
+}
+
+}
+
+@-ms-keyframes slides {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -659px;
+    }
+}
+
+@keyframes slides {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -659px;
+    }
+}
+
+
+.songs {
+    background: #4AA36A;
+    border-color: #3A9059;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+   /* Prevent callout */
+
+   .nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+ .ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+ .invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+ .clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}
